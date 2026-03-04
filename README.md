@@ -31,13 +31,29 @@ A tiny utility to update/clean your system
 - Uninstall formulae that were only installed as a dependency of another formula and are now no longer needed
 - Unused Flatpak package(s) runtime(s)
 
-## Help
+## Install autocompletion
+
+Simply as
+
+```bash
+uuu --install-completion
+```
+
+And should look like (zsh shell in my case)
+
+![](assets/uuu_autocomplete.png)
+
+## UUU Help
 
 ```bash
 uuu --help
 ```
 
 ![](assets/uuu_help.png)
+
+## Dependencies
+
+- Typer
 
 ## Licence & Credits
 
