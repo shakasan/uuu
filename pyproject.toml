@@ -1,6 +1,6 @@
 [project]
 name = "universal-upgrader-utility"
-version = "0.1.9"
+version = "0.1.10"
 description = "A tiny utility to update/clean your system"
 keywords = ["uuu", "utility", "system", "upgrader", "arch linux"]
 readme = "README.md"
@@ -21,6 +21,8 @@ dependencies = ["typer>=0.24.1"]
 
 [project.urls]
 homepage = "https://makotonoblog.be"
+repository = "https://forgejo.exoseed.org/makoto/uuu"
+issues = "https://forgejo.exoseed.org/makoto/uuu/issues"
 
 [project.scripts]
 uuu = "uuu.main:main"
