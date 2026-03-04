@@ -1,6 +1,6 @@
 [project]
 name = "universal-upgrader-utility"
-version = "0.1.10"
+version = "0.1.11"
 description = "A tiny utility to update/clean your system"
 keywords = ["uuu", "utility", "system", "upgrader", "arch linux"]
 readme = "README.md"
@@ -8,7 +8,7 @@ license = "GPL-3.0-or-later"
 authors = [{ name = "Francois B (Makoto)", email = "francois@exoseed.be" }]
 maintainers = [{ name = "Francois B (Makoto)", email = "francois@exoseed.be" }]
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: System Administrators",
     "Topic :: Utilities",
     "Environment :: Console",
