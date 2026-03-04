@@ -1,6 +1,4 @@
 import subprocess
-import sys
-import time
 
 import typer
 from rich import print
@@ -154,7 +152,7 @@ def archnews():
 def cleanorphan():
     """Uninstall pacman orphan packages"""
     print(
-        f" [yellow]-->[/yellow] Clean pacman orphan packages (sudo pacman -Rs $(pacman -Qqtd))"
+        " [yellow]-->[/yellow] Clean pacman orphan packages (sudo pacman -Rs $(pacman -Qqtd))"
     )
     try:
         result = subprocess.run(
