@@ -31,6 +31,14 @@ A tiny utility to update/clean your system
 - Uninstall formulae that were only installed as a dependency of another formula and are now no longer needed
 - Unused Flatpak package(s) runtime(s)
 
+## Install
+
+Via pipx
+
+```bash
+pipx install universal-upgrader-utility
+```
+
 ## Install autocompletion
 
 Simply as
