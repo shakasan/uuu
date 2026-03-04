@@ -1,0 +1,26 @@
+[project]
+name = "universal-upgrader-utility"
+version = "0.1.9"
+description = "A tiny utility to update/clean your system"
+keywords = ["uuu", "utility", "system", "upgrader", "arch linux"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+authors = [{ name = "Francois B (Makoto)", email = "francois@exoseed.be" }]
+maintainers = [{ name = "Francois B (Makoto)", email = "francois@exoseed.be" }]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: System Administrators",
+    "Topic :: Utilities",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: POSIX :: Linux",
+    "Natural Language :: English",
+]
+requires-python = ">=3.14"
+dependencies = ["typer>=0.24.1"]
+
+[project.urls]
+homepage = "https://makotonoblog.be"
+
+[project.scripts]
+uuu = "uuu.main:main"
