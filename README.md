@@ -33,15 +33,13 @@ A tiny utility to update/clean your system
 
 ## Install
 
-Via pipx
+Pipx
 
 ```bash
 pipx install universal-upgrader-utility
 ```
 
 ## Install autocompletion
-
-Simply as
 
 ```bash
 uuu --install-completion
