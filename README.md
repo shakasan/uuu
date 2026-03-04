@@ -1,6 +1,6 @@
 # Universal Upgrader Utility
 
-<img alt="PyPI - Status" src="https://img.shields.io/pypi/status/universal-upgrader-utility"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/universal-upgrader-utility"><img alt="PyPI - Format" src="https://img.shields.io/pypi/format/universal-upgrader-utility"><img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/universal-upgrader-utility"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/universal-upgrader-utility">
+<img alt="PyPI - Status" src="https://img.shields.io/pypi/status/universal-upgrader-utility"> <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/universal-upgrader-utility"> <img alt="PyPI - Format" src="https://img.shields.io/pypi/format/universal-upgrader-utility"> <img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/universal-upgrader-utility"> <img alt="PyPI - License" src="https://img.shields.io/pypi/l/universal-upgrader-utility">
 
 A tiny utility to update/clean your system
 
