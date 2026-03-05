@@ -5,7 +5,7 @@ from rich import print
 from rich.progress import track
 
 APP_NAME = "Universal Updater Utility"
-APP_VERSION = "0.1.10"
+APP_VERSION = "0.1.12"
 APP_AUTHOR = "Francois B (Makoto)"
 APP_WEBSITE = "https://makotonoblog.be"
 

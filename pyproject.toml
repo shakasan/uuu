@@ -1,6 +1,6 @@
 [project]
 name = "universal-upgrader-utility"
-version = "0.1.11"
+version = "0.1.12"
 description = "A tiny utility to update/clean your system"
 keywords = ["uuu", "utility", "system", "upgrader", "arch linux"]
 readme = "README.md"
