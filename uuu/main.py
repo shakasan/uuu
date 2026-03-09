@@ -5,7 +5,7 @@ from rich import print
 from rich.progress import track
 
 APP_NAME = "Universal Updater Utility"
-APP_VERSION = "0.1.12"
+APP_VERSION = "0.1.13"
 APP_AUTHOR = "Francois B (Makoto)"
 APP_WEBSITE = "https://makotonoblog.be"
 
@@ -19,7 +19,7 @@ def processcmd(text, cmd):
         text -- Task description
         cmd -- Bash command to perform
     """
-    print(f" [yellow]-->[/yellow] {text} ({cmd})")
+    print(f" [bold yellow]->[/bold yellow] {text} ({cmd})")
     try:
         result = subprocess.run(
             cmd,
@@ -37,9 +37,9 @@ def processcmd(text, cmd):
 @app.command()
 def about():
     """Return the About information"""
-    print(f"[blue]::[/blue] {APP_NAME} {APP_VERSION}")
-    print(f" [yellow]-->[/yellow] author : {APP_AUTHOR}")
-    print(f" [yellow]-->[/yellow] website : {APP_WEBSITE}")
+    print(f"[bold blue]::[/bold blue] [bold]{APP_NAME} {APP_VERSION}[/bold]")
+    print(f" [boldyellow]->[/bold yellow] author : {APP_AUTHOR}")
+    print(f" [boldyellow]->[/bold yellow] website : {APP_WEBSITE}")
 
 
 @app.command()
@@ -93,7 +93,7 @@ def cinnamonspices():
 @app.command()
 def clean():
     """Perform all cleaning tasks at once"""
-    print("[blue]::[/blue] Cleaning system...")
+    print("[bold blue]::[/bold blue] [bold]Cleaning system...[/bold]")
     fcts = (flatpakuninstall, brewclean, brewautoremove)
     for fct in fcts:
         fct()
@@ -103,7 +103,7 @@ def clean():
 def cleanorphan():
     """Uninstall pacman orphan packages"""
     print(
-        " [yellow]-->[/yellow] Clean pacman orphan packages (sudo pacman -Rs $(pacman -Qqtd))"
+        " [bold yellow]->[/bold yellow] Clean pacman orphan packages (sudo pacman -Rs $(pacman -Qqtd))"
     )
     try:
         result = subprocess.run(
@@ -163,7 +163,7 @@ def tldrupdate():
 @app.command()
 def upgrade():
     """Upgrade everything at once"""
-    print("[blue]::[/blue] Updating system...")
+    print("[bold blue]::[/bold blue] [bold]Updating system...[/bold]")
     fcts = (
         pipxugrade,
         yarnugrade,
