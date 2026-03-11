@@ -5,7 +5,7 @@ from rich import print
 from rich.progress import track
 
 APP_NAME = "Universal Updater Utility"
-APP_VERSION = "0.1.14"
+APP_VERSION = "0.1.15"
 APP_AUTHOR = "Francois B (Makoto)"
 APP_WEBSITE = "https://makotonoblog.be"
 
@@ -19,7 +19,8 @@ def processcmd(text, cmd):
         text -- Task description
         cmd -- Bash command to perform
     """
-    print(f" [bold yellow]->[/bold yellow] {text} ({cmd})")
+    print(f"[bold blue]::[/bold blue] [bold]{text}[/bold]")
+    print(f" [bold yellow]->[/bold yellow] commande : {cmd}")
     try:
         result = subprocess.run(
             cmd,
@@ -39,7 +40,9 @@ def about():
     """Return the About information"""
     print(f"[bold blue]::[/bold blue] [bold]{APP_NAME} {APP_VERSION}[/bold]")
     print(f" [bold yellow]->[/bold yellow] author : {APP_AUTHOR}")
-    print(f" [bold yellow]->[/bold yellow] website : {APP_WEBSITE}")
+    print(
+        f" [bold yellow]->[/bold yellow] website : [link={APP_WEBSITE}]{APP_WEBSITE}[/link]"
+    )
 
 
 @app.command()
@@ -93,7 +96,6 @@ def cinnamonspices():
 @app.command()
 def clean():
     """Perform all cleaning tasks at once"""
-    print("[bold blue]::[/bold blue] [bold]Cleaning system...[/bold]")
     fcts = (flatpakuninstall, brewclean, brewautoremove)
     for fct in fcts:
         fct()
@@ -102,9 +104,8 @@ def clean():
 @app.command()
 def cleanorphan():
     """Uninstall pacman orphan packages"""
-    print(
-        " [bold yellow]->[/bold yellow] Clean pacman orphan packages (sudo pacman -Rs $(pacman -Qqtd))"
-    )
+    print("[bold blue]::[/bold blue] [bold] Clean pacman orphan packages[/bold]")
+    print(" [bold yellow]->[/bold yellow] command : sudo pacman -Rs $(pacman -Qqtd)")
     try:
         result = subprocess.run(
             "pacman -Qqtd && sudo pacman -Rs $(pacman -Qqtd)",
@@ -163,7 +164,6 @@ def tldrupdate():
 @app.command()
 def upgrade():
     """Upgrade everything at once"""
-    print("[bold blue]::[/bold blue] [bold]Updating system...[/bold]")
     fcts = (
         pipxugrade,
         yarnugrade,
