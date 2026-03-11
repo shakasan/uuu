@@ -5,7 +5,7 @@ from rich import print
 from rich.progress import track
 
 APP_NAME = "Universal Updater Utility"
-APP_VERSION = "0.1.13"
+APP_VERSION = "0.1.14"
 APP_AUTHOR = "Francois B (Makoto)"
 APP_WEBSITE = "https://makotonoblog.be"
 
@@ -38,8 +38,8 @@ def processcmd(text, cmd):
 def about():
     """Return the About information"""
     print(f"[bold blue]::[/bold blue] [bold]{APP_NAME} {APP_VERSION}[/bold]")
-    print(f" [boldyellow]->[/bold yellow] author : {APP_AUTHOR}")
-    print(f" [boldyellow]->[/bold yellow] website : {APP_WEBSITE}")
+    print(f" [bold yellow]->[/bold yellow] author : {APP_AUTHOR}")
+    print(f" [bold yellow]->[/bold yellow] website : {APP_WEBSITE}")
 
 
 @app.command()

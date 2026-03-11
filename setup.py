@@ -9,7 +9,7 @@ entry_points = {"console_scripts": ["uuu = uuu.main:main"]}
 
 setup(
     name="uuu",
-    version="0.1.13",
+    version="0.1.14",
     fullname="Universal-Upgrader-Utility",
     description="A tiny utility to update/clean your system",
     author="Francois B (Makoto)",
