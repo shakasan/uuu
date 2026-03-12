@@ -20,7 +20,7 @@ def processcmd(text, cmd):
         cmd -- Bash command to perform
     """
     print(f"[bold blue]::[/bold blue] [bold]{text}[/bold]")
-    print(f" [bold yellow]->[/bold yellow] commande : {cmd}")
+    print(f" [bold yellow]->[/bold yellow] command : {cmd}")
     try:
         result = subprocess.run(
             cmd,
