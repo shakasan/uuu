@@ -20,15 +20,16 @@ A tiny utility to update/clean your system
 - Local cache of tldr pages
 - Pipx packages
 - Rustup
-- Yarn packages installed globally
 - VSCode extensions
 - VSCodium extensions
+- Yarn packages installed globally
 
 ### Cleanup
 
 - Pacman orphaned packages
-- Remove stale lock files and outdated downloads for all formulae and casks, and remove old versions of installed formulae
-- Uninstall formulae that were only installed as a dependency of another formula and are now no longer needed
+- Homebrew
+  - Remove stale lock files and outdated downloads for all formulae and casks, and remove old versions of installed formulae
+  - Uninstall formulae that were only installed as a dependency of another formula and are now no longer needed
 - Unused Flatpak package(s) runtime(s)
 
 ## Install
