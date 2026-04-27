@@ -26,10 +26,10 @@ A tiny utility to update/clean your system
 
 ### Cleanup
 
-- Pacman orphaned packages
 - Homebrew
   - Remove stale lock files and outdated downloads for all formulae and casks, and remove old versions of installed formulae
   - Uninstall formulae that were only installed as a dependency of another formula and are now no longer needed
+- Pacman orphaned packages
 - Unused Flatpak package(s) runtime(s)
 
 ## Install
